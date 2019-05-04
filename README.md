@@ -7,15 +7,16 @@ build a building on Minecraft by using c
 
 1) 과제의 GitHub 링크를 제출한다. GitHub에는 다음 내용이 포함되어야 한다.
 
-    - Visual C++ 프로젝트 및 소스 코드(빌드 가능)
-      소스.cpp 파일을 올려놓았습니다. 확인바랍니다.
 
-    - 꾸며진 월드를 돌아 다니는 소개 동영상(파일이 커서 유튜브로 제출합니다.)
-      유튜브 링크 : https://www.youtube.com/watch?v=IimmDbpm8q0&feature=youtu.be
+        - Visual C++ 프로젝트 및 소스 코드(빌드 가능)
+         소스.cpp 파일을 올려놓았습니다. 확인바랍니다.
 
-    - 과제 설명(README.md)
-      만들고자 한 것은 309관과 운동장 그리고 208관입니다.
-      (어떻게 만들었는 지를 설명하는 자료) 그림자료와 주석부분으로 설명하기
+        - 꾸며진 월드를 돌아 다니는 소개 동영상(파일이 커서 유튜브로 제출합니다.)
+         유튜브 링크 : https://www.youtube.com/watch?v=IimmDbpm8q0&feature=youtu.be
+
+        - 과제 설명(README.md)
+         만들고자 한 것은 309관과 운동장 그리고 208관입니다.
+         (어떻게 만들었는 지를 설명하는 자료) 그림자료와 주석부분으로 설명하기
       
 
       만들고자 하는 것이 무엇이고 어떻게 만들었는 지를 설명하는 자료
