@@ -96,7 +96,7 @@ int main() {
 
 	//310관 장식_2_1(유리장식)
 	for (; xx1 < xx2; xx1 = xx1 + 2) {//장식의 크기 변화를 원하지 않아서 c를 곱하지 않는다.(비율을 신경쓰지 않는다)
-		for (yy1 = (y1 + 1 + y2) / 2; yy1 < yy2; yy1++) {//(yy1 + yy2) / 4가 절벽의 높이와 같다. 여기서 장식은 절벽 높이까지 할 것이기 때문에 이것을 사용한다. 
+		for (yy1 = (y1 + 1 + y2) / 2; yy1 < yy2; yy1++) {//(y1 + 1 + y2) / 2는 전체 높이의 반이다. 여기서 장식은 절벽 높이까지 할 것이기 때문에 이것을 사용한다.
 			locateBlock(iron, xx1, yy1, zz1);
 			locateBlock(glass, xx1 + 1, yy1, zz1);
 		}
@@ -422,6 +422,13 @@ int main() {
 	yy1 = y1 + 1;
 
 
+	//208관 통로 안에 문 뚫기
+	for (i = 0; i < 4 * b; i++) {
+		for (j = 0; j < 3 * c; j++) {
+			locateBlock(air, x1 + 39 * a + 16 * a, yy1 + i, (zz1 + zz2) / 2 + j);
+			locateBlock(air, x1 + 21 * a + 16 * a, yy1 + i, (zz1 + zz2) / 2 + j);
+		}
+	}
 
 
 
