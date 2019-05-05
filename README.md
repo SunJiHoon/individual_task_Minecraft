@@ -34,7 +34,7 @@ build a building on Minecraft by using c
         	if (x1 > x2) { p = x1; x1 = x2; x2 = p; }
 		if (y1 > y2) { p = y1; y1 = y2; y2 = p; }
 		if (z1 > z2) { p = z1; z1 = z2; z2 = p; }
-        이 것을 통해 작은 값들은 x1,y1,z1에 들어가고, 큰 값은 x2,y2,z2에 드러간다.
+        이 것을 통해 작은 값들은 x1,y1,z1에 들어가고, 큰 값은 x2,y2,z2에 들어간다.
          
 3. 건물들의 길이 조정에 관한 것.
 
@@ -84,7 +84,7 @@ build a building on Minecraft by using c
 
 평가.
 제출함: 빌드 가능한 프로젝트/소스코드가 있는가(2점) 
-	
+
 	깃허브에 있습니다.
 	
 GitHub에 README.md/동영상 자료가 있는가(1점)
