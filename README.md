@@ -20,9 +20,9 @@ build a building on Minecraft by using c
 1. 만들고자 한 것과 그것의 사진자료.
         
         만들고자 한 것은 309관과 운동장 그리고 208관이다.
-        ![자료2](https://user-images.githubusercontent.com/46434398/57189140-9aad8380-6f45-11e9-8a1b-0a5063c306f5.png)
+![자료2](https://user-images.githubusercontent.com/46434398/57189140-9aad8380-6f45-11e9-8a1b-0a5063c306f5.png)
         -> 자료 2를 바탕으로
-        ![자료1](https://user-images.githubusercontent.com/46434398/57189139-9a14ed00-6f45-11e9-8c14-247ffc033018.png)
+![자료1](https://user-images.githubusercontent.com/46434398/57189139-9a14ed00-6f45-11e9-8c14-247ffc033018.png)
         -> 자료 1을 만들었다.
         각 건물의 길이는 자료2의 실제 길이를 바탕으로 자료1을 만들었다.
         
