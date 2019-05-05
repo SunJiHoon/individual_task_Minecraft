@@ -21,17 +21,19 @@ build a building on Minecraft by using c
         
         만들고자 한 것은 309관과 운동장 그리고 208관이다.
 ![자료2](https://user-images.githubusercontent.com/46434398/57189140-9aad8380-6f45-11e9-8a1b-0a5063c306f5.png)
+
         -> 자료 2를 바탕으로
 ![자료1](https://user-images.githubusercontent.com/46434398/57189139-9a14ed00-6f45-11e9-8c14-247ffc033018.png)
+
         -> 자료 1을 만들었다.
         각 건물의 길이는 자료2의 실제 길이를 바탕으로 자료1을 만들었다.
         
 2. 입력받은 값 처리.
         
         입력받은 값들은 x1,y1,z1와 x2,y2,z2에 저장된다. 그 후
-        if (x1 > x2) { p = x1; x1 = x2; x2 = p; }
-	if (y1 > y2) { p = y1; y1 = y2; y2 = p; }
-	if (z1 > z2) { p = z1; z1 = z2; z2 = p; }
+        	if (x1 > x2) { p = x1; x1 = x2; x2 = p; }
+		if (y1 > y2) { p = y1; y1 = y2; y2 = p; }
+		if (z1 > z2) { p = z1; z1 = z2; z2 = p; }
         이 것을 통해 작은 값들은 x1,y1,z1에 들어가고, 큰 값은 x2,y2,z2에 드러간다.
          
 3. 건물들의 길이 조정에 관한 것.
@@ -42,8 +44,8 @@ build a building on Minecraft by using c
         올려놓은 소스.cpp 파일의 주석을 참고하면 건물들의 비율을 설정해놓은 것을 볼 수 있을 것이다.
         
         아래의 코드는 소스.cpp 파일에서 사용한 코드의 일부분이다. 310관 비율을 나타내는 방법이다.
-	xx1 = x1, yy1 = y1 + 1, zz1 = z2 - 60 * c; //c는 1/143이다
-	xx2 = x1 + 134 * a, yy2 = y2, zz2 = z2; // a는 1/150이다
+		xx1 = x1, yy1 = y1 + 1, zz1 = z2 - 60 * c; //c는 1/143이다
+		xx2 = x1 + 134 * a, yy2 = y2, zz2 = z2; // a는 1/150이다
         a,c비율을 정해 놓았기 때문에 건물들이 비율대로 생성될 것이다.
         
 4. 건물 생성
@@ -62,12 +64,15 @@ build a building on Minecraft by using c
 다음 조건을 만족하는 건물을 생성하는 프로그램을 개발해서 GitHub에 올리세요.
 
 조건1) scanf를 이용해서, 건물의 위치와 크기를 입력 받는다.
-         두 점 (x1, y1, z1)와 (x2, y2, z2)으로 만들어지는 공간에 맞춰서 건물이 생성된다.
+
+	두 점 (x1, y1, z1)와 (x2, y2, z2)으로 만들어지는 공간에 맞춰서 건물이 생성된다.
 
 조건2) 주어진 공간의 밖에 블록이 놓아지면 안된다.
+
           만족한다
 
 조건3) 주어진 공간에 맞춰서 건물 크기가 조정된다.
+
          1차 (0,5,0)-(150,55,143)
          2차 (10,60,-5)-(85,5,-100)
          3차 (150,40,10)-(250,10,106)
@@ -78,6 +83,10 @@ build a building on Minecraft by using c
          동영상 링크 : https://www.youtube.com/watch?v=IimmDbpm8q0&feature=youtu.be
 
 평가.
-제출함: 빌드 가능한 프로젝트/소스코드가 있는가(2점) 깃허브에 있습니다.
-          GitHub에 README.md/동영상 자료가 있는가(1점) 파일이 커서 유튜브에 올렸습니다. 
-          https://www.youtube.com/watch?v=IimmDbpm8q0&feature=youtu.be
+제출함: 빌드 가능한 프로젝트/소스코드가 있는가(2점) 
+	
+	깃허브에 있습니다.
+	
+GitHub에 README.md/동영상 자료가 있는가(1점)
+
+	파일이 커서 유튜브에 올렸습니다. 링크 : https://www.youtube.com/watch?v=IimmDbpm8q0&feature=youtu.be
