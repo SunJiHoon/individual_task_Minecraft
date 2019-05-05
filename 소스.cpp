@@ -148,20 +148,22 @@ int main() {
 		yy1 = y1 + 1;
 	}
 	xx1 = x1;
-	for (; zz1 < z2 - 60 * c + 4 * c; zz1++) { //z2 - 60 * c;는 zz1의 값과 같다
-		for (; xx1 <= xx2; xx1 = xx1 + 6 * a) {
-			for (; yy1 <= (y1 + y2) / 4; yy1++) {
-				locateBlock(air, xx1, yy1 + (y1 + y2) / 4, zz1);
-				locateBlock(air, xx1 + 1, yy1 + (y1 + y2) / 4, zz1);
-				locateBlock(air, xx1 + 2, yy1 + (y1 + y2) / 4, zz1);
 
+	if (a != 0) { //a가 0일경우 이 식은 무한루프에 빠진다.
+		for (; zz1 < z2 - 60 * c + 4 * c; zz1++) { //z2 - 60 * c;는 zz1의 값과 같다
+			for (; xx1 <= xx2; xx1 = xx1 + 6 * a) {
+				for (; yy1 <= (y1 + y2) / 4; yy1++) {
+					locateBlock(air, xx1, yy1 + (y1 + y2) / 4, zz1);
+					locateBlock(air, xx1 + 1, yy1 + (y1 + y2) / 4, zz1);
+					locateBlock(air, xx1 + 2, yy1 + (y1 + y2) / 4, zz1);
+
+				}
+				yy1 = y1 + 1;
 			}
-			yy1 = y1 + 1;
+			xx1 = x1;
 		}
-		xx1 = x1;
+		zz1 = z2 - 60 * c;
 	}
-	zz1 = z2 - 60 * c;
-
 
 
 	////
@@ -343,25 +345,25 @@ int main() {
 	}
 	xx1 = x2 - 20 * a;
 
+	if ((x2 - x1) > 5) {
+		//주차장_주차선
+		for (; zz1 < zz2 - 6; zz1 = zz1 + 4) {
+			locateBlock(white, xx1 + 1, (yy2 + yy1) / 4, zz1 + 1);
+			locateBlock(white, xx1 + 2, (yy2 + yy1) / 4, zz1 + 1);
+			locateBlock(white, xx1 + 3, (yy2 + yy1) / 4, zz1 + 1);
 
-	//주차장_주차선
-	for (; zz1 < zz2 - 6; zz1 = zz1 + 4) {
-		locateBlock(white, xx1 + 1, (yy2 + yy1) / 4, zz1 + 1);
-		locateBlock(white, xx1 + 2, (yy2 + yy1) / 4, zz1 + 1);
-		locateBlock(white, xx1 + 3, (yy2 + yy1) / 4, zz1 + 1);
+			locateBlock(white, xx2 - 1, (yy2 + yy1) / 4, zz1 + 1);
+			locateBlock(white, xx2 - 2, (yy2 + yy1) / 4, zz1 + 1);
+			locateBlock(white, xx2 - 3, (yy2 + yy1) / 4, zz1 + 1);
+		}
+		zz1 = z2 - 110 * c;
 
-		locateBlock(white, xx2 - 1, (yy2 + yy1) / 4, zz1 + 1);
-		locateBlock(white, xx2 - 2, (yy2 + yy1) / 4, zz1 + 1);
-		locateBlock(white, xx2 - 3, (yy2 + yy1) / 4, zz1 + 1);
+
+		for (; zz1 < zz2 - 6; zz1++) {
+			locateBlock(white, xx1, (yy2 + yy1) / 4, zz1 + 1);
+			locateBlock(white, xx2, (yy2 + yy1) / 4, zz1 + 1);
+		}
 	}
-	zz1 = z2 - 110 * c;
-
-
-	for (; zz1 < zz2 - 6; zz1++) {
-		locateBlock(white, xx1, (yy2 + yy1) / 4, zz1 + 1);
-		locateBlock(white, xx2, (yy2 + yy1) / 4, zz1 + 1);
-	}
-
 	////
 	/*208관 부분*/
 	////
@@ -457,7 +459,9 @@ int main() {
 		for (; xx1 <= xx2; xx1++) {
 			for (; zz1 <= zz2; zz1++) {
 				locateBlock(grass, xx1, yy1, zz1);
-				locateBlock(TULIP, xx1, yy1 + 1, zz1);
+				if (y1 < y2) {
+					locateBlock(TULIP, xx1, yy1 + 1, zz1);
+				}
 			}
 			zz1 = z2 - 100 * c;
 		}
@@ -473,7 +477,9 @@ int main() {
 		for (; xx1 <= xx2; xx1++) {
 			for (; zz1 <= zz2; zz1++) {
 				locateBlock(grass, xx1, yy1, zz1);
-				locateBlock(TULIP, xx1, yy1 + 1, zz1);
+				if (y1 < y2) {
+					locateBlock(TULIP, xx1, yy1 + 1, zz1);
+				}
 			}
 			zz1 = z1 + 28 * c;
 		}
