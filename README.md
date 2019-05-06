@@ -91,4 +91,3 @@ GitHub에 README.md/동영상 자료가 있는가(1점)
 
 	파일이 커서 유튜브에 올렸습니다. 링크 : https://www.youtube.com/watch?v=IimmDbpm8q0&feature=youtu.be
 
-<iframe width="640" height="360" src="https://www.youtube.com/watch?v=IimmDbpm8q0&feature=youtu.be" frameborder="0" gesture="media" allowfullscreen=""></iframe>
